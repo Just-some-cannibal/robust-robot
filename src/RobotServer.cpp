@@ -1,5 +1,8 @@
 #include "RobotServer.h"
 
+RobotServer::RobotServer() : ISocketServer(20000) {
+}
+
 RobotServer::~RobotServer()
 {
     close(ServerSock);

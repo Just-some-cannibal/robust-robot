@@ -8,6 +8,7 @@ class RobotServer : public Robust::ISocketServer
   public:
     std::atomic<float> Throttle1;
     std::atomic<float> Throttle2;
+    RobotServer();
     ~RobotServer();
   private:
     void HandleRequest(int);

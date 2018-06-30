@@ -15,7 +15,7 @@ void MotorController::SetThrottle (double throttle)
 	double val2 = (throttle > 0)? 0: -Throttle;
 
 	File.open(FileName, std::ios::out | std::ios::trunc);
-	File << Pin1 << "=" << val1 << " " << Pin2 << "=" << "val2" << std::endl;
+	File << Pin1 << "=" << val1 << " " << Pin2 << "=" << val2 << std::endl;
 	File.close();
 }
 
